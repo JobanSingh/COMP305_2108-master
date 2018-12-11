@@ -4,9 +4,16 @@ using UnityEngine;
 
 [CreateAssetMenu (menuName = "Player/PlayerStats")]
 public class PlayerStats : ScriptableObject {
+    [Header("Health Information")]
+    public float maxHealth = 20;
+
+
     [Header("Movement Settings")]
     public float walkSpeed = 5.0f;
     public float jumpForce = 15.0f;
+
+    
+    
 
     [Header("Ground Check Settings")]
     public float groundRadius = 0.2f;
